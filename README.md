@@ -5,7 +5,8 @@ angular-csrf-cross-domain
 ============
 > Enable csrf/xsrf for cross domain requests in Angular
 
-[$http docs](https://docs.angularjs.org/api/ng/service/$http) : The header will not be set for cross-domain requests.
+[$http docs](https://docs.angularjs.org/api/ng/service/$http) : 
+Angular provides a mechanism to counter XSRF. When performing XHR requests, but will **not** be set for *cross-domain requests*.
 
 You only need this library:
 * You are making *cross domain requests* and enabled angular csrf/xsrf protection.
