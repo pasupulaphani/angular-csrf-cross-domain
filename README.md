@@ -16,9 +16,19 @@ Install the library through bower.
 ```js
 bower install angular-csrf-cross-domain
 ```
->Also called as angular-csrf-cross-domain
+>Also available with the name ```angular-csrf-cross-domain```
 
 Add it to your app dependency
 ```js
 angular.module('myModule',['csrf-cross-domain'])
 ```
+
+Thats it :D
+
+## Customize:
+
+
+## Locations:
+- http://ngmodules.org/modules/angular-csrf-cross-domain
+- http://bower.io/search/?q=angular-csrf-cross-domain
+- http://bower.io/search/?q=angular-xsrf-cross-domain
