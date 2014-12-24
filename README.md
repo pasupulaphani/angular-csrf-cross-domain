@@ -29,9 +29,9 @@ That's it - you are done!
 The provider is fully customizable. Below are the methods given by provider.
 
 **Default csrf component names**:
-- HTTP header: ```X-XSRF-TOKEN```
-- HTTP cookie: ```XSRF-TOKEN```
-- HTTP allowed methods: ```'GET', 'POST', 'PUT', 'PATCH', 'DELETE'```
+- HTTP default header name: ```X-XSRF-TOKEN```
+- HTTP default cookie name: ```XSRF-TOKEN```
+- HTTP default allowed methods: ```'GET', 'POST', 'PUT', 'PATCH', 'DELETE'```
 
 **Django example:** (each framework has its own default csrf component naming convention)
 
