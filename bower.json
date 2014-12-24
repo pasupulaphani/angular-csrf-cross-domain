@@ -1,6 +1,6 @@
 {
   "name": "angular-csrf-cross-domain",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist/angular-csrf-cross-domain.js",
   "homepage": "https://github.com/pasupulaphani/angular-csrf-cross-domain",
   "authors": [
@@ -45,5 +45,10 @@
   },
   "resolutions": {
     "angular": "~1.2"
-  }
+  },
+  "locations": [
+    "http://ngmodules.org/modules/angular-csrf-cross-domain",
+    "http://bower.io/search/?q=angular-csrf-cross-domain",
+    "http://bower.io/search/?q=angular-xsrf-cross-domain"
+  ]
 }

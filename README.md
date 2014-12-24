@@ -25,8 +25,32 @@ angular.module('myModule',['csrf-cross-domain'])
 
 Thats it :D
 
-## Customize:
+## Customization:
 
+**Default csrf componenet names**:
+HTTP header: **X-XSRF-TOKEN**
+HTTP cookie: **XSRF-TOKEN**
+HTTP allowed methods: ```'GET', 'POST', 'PUT', 'PATCH', 'DELETE'```
+
+**Django example:** (each framework has their own csrf componenets naming convention)
+
+```js
+angular.config(function(csrfCDProvider) {
+
+        csrfCDProvider.setHeaderName('X-CSRFToken');
+        csrfCDProvider.setCookieName('CSRFToken');
+        csrfCDProvider.allowedMethods(['GET', 'POST', 'HEAD']);
+
+    });
+```
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
 ## Locations:
 - http://ngmodules.org/modules/angular-csrf-cross-domain
