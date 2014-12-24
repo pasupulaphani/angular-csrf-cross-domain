@@ -1,47 +1,49 @@
 {
-    "name": "angular-csrf-cross-domain",
-    "version": "0.0.0",
-    "main": "./dist/angular-csrf.js",
-    "homepage": "https://github.com/pasupulaphani/angular-csrf",
-    "authors": [
-        "pasupulaphani <pasupulaphani@gmail.com>"
-    ],
-    "license": "MIT",
-    "description": "csrf for cross domain requests",
-    "keywords": [
-        "angular",
-        "csrf",
-        "xsrf",
-        "XSRF-TOKEN",
-        "Cross Site Request Forgery",
-        "security",
-        "cross-domain",
-        "X-XSRF-TOKEN"
-    ],
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests",
-        ".bowerrc",
-        ".gitignore",
-        ".jshintignore",
-        ".jshintrc",
-        ".editorconfig",
-        "bower.json",
-        "Gruntfile.js",
-        "package.json",
-        "README.md",
-        "static"
-    ],
-    "dependencies": {
-        "angular": "~1.0.7",
-        "angular-cookies": "~1.0.7"
-    },
-    "devDependencies": {
-        "angular-mocks": "~1.0.7",
-        "angular-scenario": "~1.0.7"
-    }
+  "name": "angular-csrf-cross-domain",
+  "version": "0.0.1",
+  "main": "./dist/angular-csrf.js",
+  "homepage": "https://github.com/pasupulaphani/angular-csrf",
+  "authors": [
+    "pasupulaphani <pasupulaphani@gmail.com>"
+  ],
+  "license": "MIT",
+  "description": "csrf for cross domain requests",
+  "keywords": [
+    "angular",
+    "csrf",
+    "xsrf",
+    "XSRF-TOKEN",
+    "Cross Site Request Forgery",
+    "security",
+    "cross-domain",
+    "X-XSRF-TOKEN"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    ".editorconfig",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "static"
+  ],
+  "dependencies": {
+    "angular": "~1.2",
+    "angular-cookies": "~1.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2",
+    "angular-scenario": "~1.2"
+  },
+  "resolutions": {
+    "angular": "~1.2"
+  }
 }
-

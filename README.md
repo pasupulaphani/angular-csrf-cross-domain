@@ -1,6 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/pasupulaphani/angular-csrf-cross-domain.png?branch=master)](http://travis-ci.org/pasupulaphani/angular-csrf-cross-domain) [![Bower version](https://badge.fury.io/bo/angular-csrf-cross-domain.svg)](http://badge.fury.io/bo/angular-csrf-cross-domain) [![Hex.pm](http://img.shields.io/hexpm/l/plug.svg)]()
 
-
 angular-csrf-cross-domain
 ============
 > Enable csrf/xsrf for cross domain requests in Angular

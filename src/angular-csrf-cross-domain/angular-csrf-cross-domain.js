@@ -3,16 +3,16 @@
 // before all nested files are concatenated by Grunt
 
 // Config
-angular.module('angular-csrf-cross-domain.config', [])
-    .value('angular-csrf-cross-domain.config', {
+angular.module('csrf-cross-domain.config', [])
+    .value('csrf-cross-domain.config', {
         debug: true
     });
 
 // Modules
-angular.module('angular-csrf-cross-domain.services', []);
-angular.module('angular-csrf-cross-domain',
+angular.module('csrf-cross-domain.services', []);
+angular.module('csrf-cross-domain',
     [
-        'angular-csrf-cross-domain.config',
-        'angular-csrf-cross-domain.services',
+        'csrf-cross-domain.config',
+        'csrf-cross-domain.services',
         'ngCookies'
     ]);

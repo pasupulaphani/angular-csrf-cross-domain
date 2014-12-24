@@ -3,7 +3,7 @@
 // Set the jasmine fixture path
 // jasmine.getFixtures().fixturesPath = 'base/';
 
-describe('angular-csrf-cross-domain', function() {
+describe('csrf-cross-domain', function() {
 
     var module;
     var dependencies;
@@ -16,12 +16,12 @@ describe('angular-csrf-cross-domain', function() {
     beforeEach(function() {
 
         // Get module
-        module = angular.module('angular-csrf-cross-domain');
+        module = angular.module('csrf-cross-domain');
         dependencies = module.requires;
     });
 
     it('should load config module', function() {
-        expect(hasModule('angular-csrf-cross-domain.config')).toBeTruthy();
+        expect(hasModule('csrf-cross-domain.config')).toBeTruthy();
     });
 
     
@@ -30,7 +30,7 @@ describe('angular-csrf-cross-domain', function() {
 
     
     it('should load services module', function() {
-        expect(hasModule('angular-csrf-cross-domain.services')).toBeTruthy();
+        expect(hasModule('csrf-cross-domain.services')).toBeTruthy();
     });
     
 
