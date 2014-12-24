@@ -1,8 +1,8 @@
 {
   "name": "angular-csrf-cross-domain",
   "version": "0.0.1",
-  "main": "./dist/angular-csrf.js",
-  "homepage": "https://github.com/pasupulaphani/angular-csrf",
+  "main": "./dist/angular-csrf-cross-domain.js",
+  "homepage": "https://github.com/pasupulaphani/angular-csrf-cross-domain",
   "authors": [
     "pasupulaphani <pasupulaphani@gmail.com>"
   ],
