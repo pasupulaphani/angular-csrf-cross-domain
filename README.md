@@ -8,7 +8,7 @@ angular-csrf-cross-domain
 Angular provides a mechanism to counter XSRF. When performing XHR requests, but will **not** be set for *cross-domain requests*.
 
 You only need this library:
-* You are making *cross domain requests* and enabled angular csrf/xsrf protection.
+* For *cross domain requests* and enable angular csrf/xsrf protection.
 
 Getting Started
 -----
@@ -23,23 +23,27 @@ Add it to your app dependency
 angular.module('myModule',['csrf-cross-domain'])
 ```
 
-Thats it :D
+That's it - you are done!
 
 ## Customization:
+The provider is fully customizable. Below are the methods given by provider.
 
-**Default csrf componenet names**:
-HTTP header: **X-XSRF-TOKEN**
-HTTP cookie: **XSRF-TOKEN**
-HTTP allowed methods: ```'GET', 'POST', 'PUT', 'PATCH', 'DELETE'```
+**Default csrf component names**:
+- HTTP header: ```X-XSRF-TOKEN```
+- HTTP cookie: ```XSRF-TOKEN```
+- HTTP allowed methods: ```'GET', 'POST', 'PUT', 'PATCH', 'DELETE'```
 
-**Django example:** (each framework has their own csrf componenets naming convention)
+**Django example:** (each framework has its own default csrf component naming convention)
 
 ```js
 angular.config(function(csrfCDProvider) {
 
+        // Django default name
         csrfCDProvider.setHeaderName('X-CSRFToken');
         csrfCDProvider.setCookieName('CSRFToken');
-        csrfCDProvider.allowedMethods(['GET', 'POST', 'HEAD']);
+
+        // You can even configure HTTP methods to set csrf
+        csrfCDProvider.setAllowedMethods(['GET', 'POST', 'HEAD']);
 
     });
 ```
