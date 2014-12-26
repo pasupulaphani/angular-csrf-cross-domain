@@ -25,7 +25,7 @@ angular.module('myModule',['csrf-cross-domain'])
 
 That's it - you are done!
 
-## Customization:
+## Customization
 The provider is fully customizable. Below are the methods given by provider.
 
 **Default csrf component names**:
@@ -56,7 +56,7 @@ angular.config(function(csrfCDProvider) {
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## Locations:
+## Locations
 - http://ngmodules.org/modules/angular-csrf-cross-domain
 - http://bower.io/search/?q=angular-csrf-cross-domain
 - http://bower.io/search/?q=angular-xsrf-cross-domain
