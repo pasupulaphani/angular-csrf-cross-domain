@@ -25,9 +25,6 @@ describe('csrf-cross-domain', function() {
     });
 
     
-
-    
-
     
     it('should load services module', function() {
         expect(hasModule('csrf-cross-domain.services')).toBeTruthy();
