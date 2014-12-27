@@ -110,6 +110,33 @@ describe('api specs', function() {
 
     });
 
+    describe('Setting CSRF cookie name', function() {
+
+        var config = {};
+
+        beforeEach(function() {
+
+            csrfCDProvider.setCookieName('XSRFToken');
+
+            config = {
+                headers: {}
+            };
+        });
+
+        it('should have it in header', function() {
+            config.method = 'GET';
+
+            // set the data to the cookie
+            inject(function($cookies) {
+                $cookies['XSRFToken'] = 'servertoken';
+            });
+            config = csrfCD.request(config);
+
+            expect(config.headers['X-XSRF-TOKEN']).toEqual('servertoken');
+        });
+
+    });
+
     describe('Setting CSRF allowed method', function() {
 
         var config = {};
