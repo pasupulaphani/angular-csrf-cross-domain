@@ -102,7 +102,7 @@ describe('api specs', function() {
             };
         });
 
-        it('should set for GET', function() {
+        it('GET should have header', function() {
             config.method = 'GET';
             config = csrfCD.request(config);
             expect(config.headers.hasOwnProperty('X-XSRFToken')).toBe(true);
@@ -123,7 +123,7 @@ describe('api specs', function() {
             };
         });
 
-        it('should have it in header', function() {
+        it('should copy cookie token to header', function() {
             config.method = 'GET';
 
             // set the data to the cookie
