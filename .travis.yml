@@ -10,6 +10,6 @@ before_script:
 addons:
   code_climate:
     repo_token:
-    	secure: "gMxSeQGfsca/wkH/6vL+1SEQqnNOGSNXBpvgTgXufTCbOjhDdKzQn/6BeaIgJqmByZAfZm0SOtv58N/wEQCSRcZFo0LQuxUCMjaXNi4JPFV5+vaDRYzgT/ENqlL98e10UhCbqCtqHrm7mym1TUj9DBIJo7dQSZ4shdJuIV4wwA4="
+    	secure: "d/wFwGhBdJRPTca6FeDees/h/YUP0z4MvQJAxeisyo//+tfhUMEy43hBcdg88LYtS0FQou7oucKK8PDX4BgIhIMPFbDMl1VQ7bRfjWaccI8mH4DvjkJTWL19pUjj3IunZKuWnEHVhHr2Pp7JacgD+S4t4wV/Lh5rw/VY+dE4cmg="
 after_script:
   - cat coverage/phantomjs/lcov.info | codeclimate
