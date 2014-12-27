@@ -10,7 +10,8 @@ module.exports = function(config) {
             'karma-jasmine',
             'karma-chrome-launcher',
             'karma-phantomjs-launcher',
-            'karma-firefox-launcher'
+            'karma-firefox-launcher',
+            'karma-coverage'
         ],
 
         // list of files / patterns to load in the browser
@@ -22,6 +23,9 @@ module.exports = function(config) {
             'test/unit/**/*.js'
         ],
 
+        preprocessors: {
+            'dist/angular-csrf-cross-domain.js': 'coverage'
+        },
 
         // list of files to exclude
         exclude: [],
@@ -29,8 +33,17 @@ module.exports = function(config) {
 
         // test results reporter to use
         // possible values: 'dots', 'progress', 'junit'
-        reporters: ['progress'],
+        reporters: ['progress', 'coverage'],
 
+        coverageReporter: {
+            type: 'lcov',
+            dir: 'coverage/',
+            subdir: function(browser) {
+                // normalization process to keep a consistent browser name accross different
+                // OS
+                return browser.toLowerCase().split(/[ /-]/)[0];
+            }
+        },
 
         // web server port
         port: 9876,

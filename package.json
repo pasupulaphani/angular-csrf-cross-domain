@@ -27,6 +27,7 @@
     "grunt-usemin": "~2.3.0",
     "karma": "^0.12.25",
     "karma-chrome-launcher": "~0.1.4",
+    "karma-coverage": "^0.2.7",
     "karma-firefox-launcher": "^0.1.3",
     "karma-jasmine": "~0.1.5",
     "karma-phantomjs-launcher": "^0.1.4",
@@ -36,6 +37,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "preinstall": "npm i -g grunt-cli bower karma-cli codeclimate-test-reporter",
     "test": "./node_modules/.bin/karma start karma-unit.conf.js --single-run --browsers PhantomJS,Firefox"
   }
 }
