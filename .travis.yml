@@ -9,6 +9,7 @@ before_script:
   - bower install --force
 addons:
   code_climate:
-    repo_token: 71d9b52ef5ba00eb138fd5c1f13c3015c450eb937050d27148ae131b4402cf30
+    repo_token:
+    	secure: "gMxSeQGfsca/wkH/6vL+1SEQqnNOGSNXBpvgTgXufTCbOjhDdKzQn/6BeaIgJqmByZAfZm0SOtv58N/wEQCSRcZFo0LQuxUCMjaXNi4JPFV5+vaDRYzgT/ENqlL98e10UhCbqCtqHrm7mym1TUj9DBIJo7dQSZ4shdJuIV4wwA4="
 after_script:
   - cat coverage/phantomjs/lcov.info | codeclimate
