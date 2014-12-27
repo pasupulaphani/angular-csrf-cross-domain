@@ -5,3 +5,4 @@ README.html
 npm-debug.log
 .sass-cache
 .tmp
+coverage

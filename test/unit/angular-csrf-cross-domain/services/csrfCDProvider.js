@@ -1,9 +1,31 @@
 'use strict';
 
-describe('Service: csrfCD', function() {
+describe('api specs', function() {
+
+    var csrfCDProvider;
 
     // load the service's module
-    beforeEach(module('csrf-cross-domain'));
+    beforeEach(function() {
+        // Initialize the service provider by injecting it to a fake module's config block
+        angular.module('testApp', function() {})
+            .config(function(_csrfCDProvider_) {
+                csrfCDProvider = _csrfCDProvider_;
+            });
+        // Initialize myApp injector
+        module('csrf-cross-domain', 'testApp');
+
+        // Kickstart the injectors previously registered with calls to angular.mock.module
+        inject(function() {});
+    });
+
+    describe("csrfCDProvider", function() {
+
+        it('should match provider api specs', function() {
+            expect(csrfCDProvider.setHeaderName).toBeDefined();
+            expect(csrfCDProvider.setCookieName).toBeDefined();
+            expect(csrfCDProvider.setAllowedMethods).toBeDefined();
+        });
+    });
 
     // instantiate service
     var csrfCD;
@@ -11,11 +33,11 @@ describe('Service: csrfCD', function() {
         csrfCD = _csrfCD_;
     }));
 
-    it('should match api specs', function() {
+    it('should match service api specs', function() {
         expect(csrfCD.request).toBeDefined();
     });
 
-    describe('Setting CSRF headers for methods', function() {
+    describe('Setting CSRF headers for default methods', function() {
 
         var config = {};
 
