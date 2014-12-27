@@ -11,4 +11,4 @@ addons:
   code_climate:
     repo_token: 71d9b52ef5ba00eb138fd5c1f13c3015c450eb937050d27148ae131b4402cf30
 after_script:
-  - cat lcov.info | codeclimate
+  - cat coverage/phantomjs/lcov.info | codeclimate
