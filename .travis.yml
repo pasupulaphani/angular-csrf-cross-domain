@@ -5,5 +5,10 @@ before_script:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - npm install -g grunt-cli bower karma-cli
+  - npm install -g grunt-cli bower karma-cli codeclimate-test-reporter
   - bower install --force
+addons:
+  code_climate:
+    repo_token:71d9b52ef5ba00eb138fd5c1f13c3015c450eb937050d27148ae131b4402cf30
+after_script:
+  - cat lcov.info | codeclimate
