@@ -18,7 +18,7 @@ describe('api specs', function() {
         inject(function() {});
     });
 
-    describe("csrfCDProvider", function() {
+    describe("csrfCDProvider:", function() {
 
         it('should match provider api specs', function() {
             expect(csrfCDProvider.setHeaderName).toBeDefined();
@@ -33,8 +33,11 @@ describe('api specs', function() {
         csrfCD = _csrfCD_;
     }));
 
-    it('should match service api specs', function() {
-        expect(csrfCD.request).toBeDefined();
+
+    describe("csrfCD:", function() {
+        it('should match service api specs', function() {
+            expect(csrfCD.request).toBeDefined();
+        });
     });
 
     describe('Setting CSRF headers for default methods', function() {
@@ -81,6 +84,67 @@ describe('api specs', function() {
             config.method = 'DELETE';
             config = csrfCD.request(config);
             expect(config.headers.hasOwnProperty('X-XSRF-TOKEN')).toBe(true);
+        });
+
+    });
+
+
+    describe('Setting CSRF header name', function() {
+
+        var config = {};
+
+        beforeEach(function() {
+
+            csrfCDProvider.setHeaderName('X-XSRFToken');
+
+            config = {
+                headers: {}
+            };
+        });
+
+        it('should set for GET', function() {
+            config.method = 'GET';
+            config = csrfCD.request(config);
+            expect(config.headers.hasOwnProperty('X-XSRFToken')).toBe(true);
+        });
+
+    });
+
+    describe('Setting CSRF allowed method', function() {
+
+        var config = {};
+
+        beforeEach(function() {
+
+            csrfCDProvider.setAllowedMethods(['GET', 'HEAD', 'POST']);
+
+            config = {
+                headers: {}
+            };
+        });
+
+        it('should set for GET', function() {
+            config.method = 'GET';
+            config = csrfCD.request(config);
+            expect(config.headers.hasOwnProperty('X-XSRF-TOKEN')).toBe(true);
+        });
+
+        it('should set for HEAD', function() {
+            config.method = 'HEAD';
+            config = csrfCD.request(config);
+            expect(config.headers.hasOwnProperty('X-XSRF-TOKEN')).toBe(true);
+        });
+
+        it('should set for POST', function() {
+            config.method = 'POST';
+            config = csrfCD.request(config);
+            expect(config.headers.hasOwnProperty('X-XSRF-TOKEN')).toBe(true);
+        });
+
+        it('should not set for PATCH', function() {
+            config.method = 'PATCH';
+            config = csrfCD.request(config);
+            expect(config.headers.hasOwnProperty('X-XSRF-TOKEN')).toBe(false);
         });
 
     });
