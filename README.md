@@ -16,7 +16,7 @@ Install the library through bower.
 ```js
 bower install angular-csrf-cross-domain
 ```
->Also available with the name ```angular-csrf-cross-domain```
+>Also available with the name ```angular-xsrf-cross-domain```
 
 Add it to your app dependency
 ```js
@@ -25,13 +25,13 @@ angular.module('myModule',['csrf-cross-domain'])
 
 That's it - you are done!
 
-## Customization:
+## Customization
 The provider is fully customizable. Below are the methods given by provider.
 
 **Default csrf component names**:
-- HTTP header: ```X-XSRF-TOKEN```
-- HTTP cookie: ```XSRF-TOKEN```
-- HTTP allowed methods: ```'GET', 'POST', 'PUT', 'PATCH', 'DELETE'```
+- HTTP default header name: ```X-XSRF-TOKEN```
+- HTTP default cookie name: ```XSRF-TOKEN```
+- HTTP default allowed methods: ```'GET', 'POST', 'PUT', 'PATCH', 'DELETE'```
 
 **Django example:** (each framework has its own default csrf component naming convention)
 
@@ -56,7 +56,7 @@ angular.config(function(csrfCDProvider) {
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## Locations:
+## Locations
 - http://ngmodules.org/modules/angular-csrf-cross-domain
 - http://bower.io/search/?q=angular-csrf-cross-domain
 - http://bower.io/search/?q=angular-xsrf-cross-domain
