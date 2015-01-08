@@ -60,3 +60,7 @@ angular.config(function(csrfCDProvider) {
 - http://ngmodules.org/modules/angular-csrf-cross-domain
 - http://bower.io/search/?q=angular-csrf-cross-domain
 - http://bower.io/search/?q=angular-xsrf-cross-domain
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pasupulaphani/angular-csrf-cross-domain/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
