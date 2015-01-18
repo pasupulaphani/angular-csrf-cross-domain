@@ -37,7 +37,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "preinstall": "npm i -g grunt-cli bower karma-cli codeclimate-test-reporter",
+    "preinstall": "npm i -g grunt-cli bower karma-cli codeclimate-test-reporter underscore-cli",
     "test": "./node_modules/.bin/karma start karma-unit.conf.js --single-run --browsers PhantomJS,Firefox"
   }
 }

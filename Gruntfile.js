@@ -80,5 +80,4 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['jshint:beforeConcat', 'concat', 'jshint:afterConcat', 'karma', 'uglify']);
     grunt.registerTask('livereload', ['default', 'watch']);
     grunt.registerTask('test', ['karma']);
-
 };
