@@ -44,7 +44,7 @@
     "angular-scenario": "~1.2"
   },
   "resolutions": {
-    "angular": "~1.2"
+    "angular": ">=1.4.1"
   },
   "locations": [
     "http://ngmodules.org/modules/angular-csrf-cross-domain",
