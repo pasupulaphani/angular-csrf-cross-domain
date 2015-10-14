@@ -36,15 +36,15 @@
     "static"
   ],
   "dependencies": {
-    "angular": "~1.2",
-    "angular-cookies": "~1.2"
+    "angular": ">=1.4.1",
+    "angular-cookies": ">=1.4.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.2",
     "angular-scenario": "~1.2"
   },
   "resolutions": {
-    "angular": "~1.2"
+    "angular": ">=1.4.1"
   },
   "locations": [
     "http://ngmodules.org/modules/angular-csrf-cross-domain",

@@ -49,7 +49,7 @@ angular.module('csrf-cross-domain.services')
                     'request': function(config) {
                         if (allowedMethods.indexOf(config.method) !== -1) {
                             // Read the cookie and set the header
-                            config.headers[headerName] = $cookies[cookieName];
+                            config.headers[headerName] = $cookies.get(cookieName);
                         }
                         return config;
                     }
