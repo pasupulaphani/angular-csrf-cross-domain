@@ -64,3 +64,7 @@ angular.config(function(csrfCDProvider) {
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pasupulaphani/angular-csrf-cross-domain/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pasupulaphani/angular-csrf-cross-domain/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
