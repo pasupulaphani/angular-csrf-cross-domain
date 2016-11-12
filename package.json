@@ -1,6 +1,6 @@
 {
   "name": "angular-csrf-cross-domain",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "dependencies": {},
   "devDependencies": {
     "connect-livereload": "~0.4.0",
@@ -38,6 +38,34 @@
   },
   "scripts": {
     "preinstall": "npm i -g grunt-cli bower karma-cli codeclimate-test-reporter",
-    "test": "./node_modules/.bin/karma start karma-unit.conf.js --single-run --browsers PhantomJS,Firefox"
-  }
+    "test": "karma start karma-unit.conf.js --single-run --browsers PhantomJS,Firefox"
+  },
+  "description": "[![Build Status](https://secure.travis-ci.org/pasupulaphani/angular-csrf-cross-domain.png?branch=master)](http://travis-ci.org/pasupulaphani/angular-csrf-cross-domain) [![Bower version](https://badge.fury.io/bo/angular-csrf-cross-domain.svg)](http://badge.fury.io/bo/angular-csrf-cross-domain) [![Hex.pm](http://img.shields.io/hexpm/l/plug.svg)]() [![Code Climate](https://codeclimate.com/github/pasupulaphani/angular-csrf-cross-domain/badges/gpa.svg)](https://codeclimate.com/github/pasupulaphani/angular-csrf-cross-domain) [![Test Coverage](https://codeclimate.com/github/pasupulaphani/angular-csrf-cross-domain/badges/coverage.svg)](https://codeclimate.com/github/pasupulaphani/angular-csrf-cross-domain)",
+  "main": "./dist/angular-csrf-cross-domain.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasupulaphani/angular-csrf-cross-domain.git"
+  },
+  "keywords": [
+    "angular",
+    "csrf",
+    "xsrf",
+    "XSRF-TOKEN",
+    "Cross",
+    "Site",
+    "Request",
+    "Forgery",
+    "security",
+    "cross-domain",
+    "X-XSRF-TOKEN"
+  ],
+  "author": "pasupulaphani@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pasupulaphani/angular-csrf-cross-domain/issues"
+  },
+  "homepage": "https://github.com/pasupulaphani/angular-csrf-cross-domain#readme"
 }
