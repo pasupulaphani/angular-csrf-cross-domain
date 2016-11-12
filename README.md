@@ -17,7 +17,7 @@ You only need this library:
 
 Getting Started
 -----
-Install the library through bower.
+Install the library through bower or npm.
 ```js
 bower install angular-csrf-cross-domain
 ```
